@@ -23,6 +23,32 @@ body {
     height: 405px;
     width: 605px;
     border: 3px solid black;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3rem;
+    width: 4rem;
+    color: white;
+    background-color: rgba(0, 0, 0, .1);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.arrow:hover {
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.left {
+    right: 88%;
+    z-index: 2;
+}
+
+.right {
+    left: 88%;
     z-index: 2;
 }
 
@@ -30,19 +56,9 @@ img {
     position: absolute;
     height: 400px;
     width: 600px;
+    opacity: 0;
 }
 
-.image-one {
+.visible {
     opacity: 1;
-    z-index: 1;
-}
-
-.image-two {
-    opacity: 1;
-    z-index: 1;
-}
-
-.image-three {
-    opacity: 1;
-    z-index: 1;
 }
